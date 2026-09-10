@@ -149,6 +149,20 @@
   }
   .gallery-note strong{color:var(--terra);}
 
+  /* NEARBY */
+  .grid-nearby{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .ncard{border:1px solid var(--line); background:var(--white); overflow:hidden;}
+  .ncard .nimg{aspect-ratio:4/3; overflow:hidden; position:relative;}
+  .ncard .nimg .nnum{position:absolute; top:14px; left:14px; background:rgba(46,38,33,0.72); color:var(--cream); font-family:'Fraunces',serif; font-size:0.8rem; font-weight:600; letter-spacing:0.05em; padding:4px 10px;}
+  .ncard .nbody{padding:22px 24px 26px;}
+  .ncard h3{font-size:1.15rem; margin-bottom:6px;}
+  .ncard .ndur{font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(46,38,33,0.55); margin-bottom:14px;}
+  .ncard p{font-size:0.9rem; color:rgba(46,38,33,0.75); margin-bottom:16px;}
+  .ncard .nask{font-size:0.8rem; border-top:1px solid var(--line); padding-top:14px; color:rgba(46,38,33,0.7);}
+  .ncard .nask a{color:var(--terra); text-decoration:none; font-weight:600; border-bottom:1px solid var(--terra);}
+  @media (max-width:900px){ .grid-nearby{grid-template-columns:1fr 1fr;} }
+  @media (max-width:600px){ .grid-nearby{grid-template-columns:1fr;} }
+
   /* CAFE */
   .cafe-layout{display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;}
   .cafe-photos{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
@@ -227,6 +241,7 @@
       <a href="#story">Story</a>
       <a href="#gallery">Gallery &amp; Shop</a>
       <a href="#cafe">Café</a>
+      <a href="#nearby">Nearby</a>
       <a href="#visit">Visit</a>
       <a href="#contact">Inquire</a>
     </nav>
@@ -381,6 +396,84 @@
               <div class="mdesc">Espresso bar, sodas, juices and bottled water.</div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nearby">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">What's Around</div>
+        <h2>Nearby, while you're in Karen</h2>
+      </div>
+      <p class="note">A few well-known spots close to Comboni Road, worth combining with your visit.</p>
+    </div>
+
+    <div class="grid-nearby">
+      <div class="ncard reveal">
+        <div class="nimg"><span class="nnum">01</span><img src="https://images.unsplash.com/photo-1506902039157-1a7e7374b077?fm=jpg&q=60&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Glassblowing craftsman working with molten glass" loading="lazy"></div>
+        <div class="nbody">
+          <h3>Kitengela Glass</h3>
+          <div class="ndur">Half Day Excursion</div>
+          <p>A working glass studio and gallery known for hand-blown recycled glasswork.</p>
+          <div class="nask">Ask our team for directions</div>
+        </div>
+      </div>
+      <div class="ncard reveal">
+        <div class="nimg"><span class="nnum">02</span><img src="https://images.unsplash.com/photo-1745885909535-58c453688cb4?fm=jpg&q=60&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Lions on the African savanna during a game drive" loading="lazy"></div>
+        <div class="nbody">
+          <h3>Nairobi National Park</h3>
+          <div class="ndur">Half Day Excursion</div>
+          <p>A game drive minutes from the city, with lions, giraffes and rhinos against a skyline backdrop.</p>
+          <div class="nask">Ask our team for directions</div>
+        </div>
+      </div>
+      <div class="ncard reveal">
+        <div class="nimg"><span class="nnum">03</span><img src="https://images.unsplash.com/photo-1770349694373-fe9fe88e14f9?fm=jpg&q=60&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Go-kart racing on a track" loading="lazy"></div>
+        <div class="nbody">
+          <h3>GP Karting</h3>
+          <div class="ndur">One Hour Excursion</div>
+          <p>A go-karting track for a quick burst of speed between stops.</p>
+          <div class="nask">Ask our team for directions</div>
+        </div>
+      </div>
+      <div class="ncard reveal">
+        <div class="nimg"><span class="nnum">04</span><img src="https://images.unsplash.com/photo-1505576652881-6b80543182f5?fm=jpg&q=60&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Giraffe close-up in Kenya" loading="lazy"></div>
+        <div class="nbody">
+          <h3>Giraffe Centre</h3>
+          <div class="ndur">Half Day Excursion</div>
+          <p>Hand-feed Rothschild giraffes at eye level, a Karen classic for visitors of all ages.</p>
+          <div class="nask">Ask our team for directions</div>
+        </div>
+      </div>
+      <div class="ncard reveal">
+        <div class="nimg"><span class="nnum">05</span><img src="https://images.unsplash.com/photo-1605649461784-7d5e4df56c97?fm=jpg&q=60&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Crocodile resting by the water" loading="lazy"></div>
+        <div class="nbody">
+          <h3>Mamba Village</h3>
+          <div class="ndur">Half Day Excursion</div>
+          <p>A crocodile farm and gardens, with pony rides and a fish-spa attraction for visitors.</p>
+          <div class="nask">Ask our team for directions</div>
+        </div>
+      </div>
+      <div class="ncard reveal">
+        <div class="nimg"><span class="nnum">06</span><img src="https://images.unsplash.com/photo-1709490659650-5125da69012a?fm=jpg&q=60&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A baby elephant walking beside an adult elephant" loading="lazy"></div>
+        <div class="nbody">
+          <h3>Sheldrick Wildlife Orphanage</h3>
+          <div class="ndur">Half Day Excursion</div>
+          <p>Home to orphaned elephants and rhinos, raised for eventual return to the wild.</p>
+          <div class="nask">Ask our team for directions</div>
+        </div>
+      </div>
+      <div class="ncard reveal">
+        <div class="nimg"><span class="nnum">07</span><img src="https://images.unsplash.com/photo-1785843530152-b4b69040aa10?fm=jpg&q=60&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Green golf course fairway lined with trees" loading="lazy"></div>
+        <div class="nbody">
+          <h3>Karen Golf &amp; Country Club</h3>
+          <div class="ndur">Half Day Excursion</div>
+          <p>A long-standing Karen golf course, open for a round or a quiet lunch.</p>
+          <div class="nask">Ask our team for directions</div>
         </div>
       </div>
     </div>
